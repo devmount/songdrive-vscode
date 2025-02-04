@@ -1,6 +1,6 @@
 {
     "name": "songdrive-vscode",
-    "displayName": "SongDrive Language Support",
+    "displayName": "SongDrive Syntax Support",
     "description": "Syntax highlighting for SongDrive song files",
     "version": "0.1.0",
     "license": "MIT",
