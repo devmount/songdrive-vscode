@@ -1,0 +1,26 @@
+{
+    "fileTypes": [
+        "songdrive",
+        "sd"
+    ],
+    "name": "songdrive",
+    "patterns": [
+        {
+            "include": "#comment"
+        },
+        {
+            "include": "#string"
+        }
+    ],
+    "repository": {
+        "comment": {
+            "match": "^(--).*\\n",
+            "name": "comment.songdrive"
+        },
+        "string": {
+            "match": ".*\\S\\s\\s\\n",
+            "name": "string.songdrive"
+        }
+    },
+    "scopeName": "source.songdrive"
+}

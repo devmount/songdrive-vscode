@@ -1,0 +1,45 @@
+{
+    "name": "songdrive-vscode",
+    "displayName": "SongDrive Language Support",
+    "description": "Syntax highlighting for SongDrive song files",
+    "version": "0.1.0",
+    "license": "MIT",
+    "icon": "logo.png",
+    "engines": {
+        "vscode": ">=0.9.0-pre.1"
+    },
+    "author": {
+        "name": "Andreas Müller",
+        "url": "https://devmount.com"
+    },
+    "publisher": "devmount",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/devmount/songdrive-vscode"
+    },
+    "contributes": {
+        "languages": [
+            {
+                "id": "songdrive",
+                "aliases": [
+                    "SongDrive",
+                    "songdrive"
+                ],
+                "extensions": [
+                    ".songdrive",
+                    ".sd"
+                ]
+            }
+        ],
+        "grammars": [
+            {
+                "language": "songdrive",
+                "scopeName": "source.songdrive",
+                "path": "./syntaxes/songdrive.json"
+            }
+        ]
+    },
+    "devDependencies": {
+        "@vscode/vsce": "^3.2.2"
+    }
+}
