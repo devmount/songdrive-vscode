@@ -1,0 +1,25 @@
+name: Validate
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  package:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+
+      - uses: actions/setup-node@v7
+        with:
+          node-version: 24
+
+      - run: npm ci
+
+      - run: npx vsce package --out songdrive-vscode.vsix
+
+      - uses: actions/upload-artifact@v7
+        with:
+          name: songdrive-vscode.vsix
+          path: songdrive-vscode.vsix
