@@ -28,7 +28,8 @@
                 "extensions": [
                     ".songdrive",
                     ".sd"
-                ]
+                ],
+                "configuration": "./language-configuration.json"
             }
         ],
         "grammars": [

@@ -15,7 +15,7 @@
     "repository": {
         "marker": {
             "match": "^--(v|p|c|b|i|m|o)\\d*[ \\t]*$",
-            "name": "keyword.control.marker.songdrive"
+            "name": "comment.line.marker.songdrive"
         },
         "chordLine": {
             "begin": "^(?=.*\\S[ \\t]{2,}$)",
@@ -23,7 +23,7 @@
             "patterns": [
                 {
                     "match": "\\S+",
-                    "name": "constant.other.chord.songdrive"
+                    "name": "string.other.chord.songdrive"
                 }
             ]
         }
