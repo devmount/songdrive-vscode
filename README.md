@@ -6,10 +6,6 @@ This VS Code extension provides language support and highlighting for [SongDrive
 
 ## Release Notes
 
-Here is an overview of the changes that were made in each version.
-
-### v0.1.0
-
-🚀 Initial release.
+You can find all changes per release in the [changelog](./CHANGELOG.md).
 
 **Enjoy!**
