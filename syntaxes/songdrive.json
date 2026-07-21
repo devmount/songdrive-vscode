@@ -6,20 +6,26 @@
     "name": "songdrive",
     "patterns": [
         {
-            "include": "#comment"
+            "include": "#marker"
         },
         {
-            "include": "#string"
+            "include": "#chordLine"
         }
     ],
     "repository": {
-        "comment": {
-            "match": "^(--).*\\n",
-            "name": "comment.songdrive"
+        "marker": {
+            "match": "^--(v|p|c|b|i|m|o)\\d*[ \\t]*$",
+            "name": "keyword.control.marker.songdrive"
         },
-        "string": {
-            "match": ".*\\S\\s\\s\\n",
-            "name": "string.songdrive"
+        "chordLine": {
+            "begin": "^(?=.*\\S[ \\t]{2,}$)",
+            "end": "$",
+            "patterns": [
+                {
+                    "match": "\\S+",
+                    "name": "constant.other.chord.songdrive"
+                }
+            ]
         }
     },
     "scopeName": "source.songdrive"
